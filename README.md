@@ -16,13 +16,14 @@ Pipeline:
 > ✅ Pronto per partire **anche senza scraping**: puoi importare un CSV tuo.
 
 ## Install
-
+```bash
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 
 ##Shortcut
+```bash
 date,season,matchweek,home_team,away_team,home_goals,away_goals,home_odds,draw_odds,away_odds
 2024-08-24,24-25,1,Inter,Genoa,2,0,1.55,4.10,7.20
 2024-08-25,24-25,1,Milan,Torino,1,1,1.90,3.50,4.20
