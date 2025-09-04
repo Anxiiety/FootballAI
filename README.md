@@ -15,12 +15,6 @@ Pipeline:
 
 > ✅ Pronto per partire **anche senza scraping**: puoi importare un CSV tuo.
 
-## Install
-```bash
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
 
 ## Shortcut
 # crea segnaposto cartelle
@@ -37,3 +31,10 @@ notepad data/raw/matches.csv  # incolla il CSV sopra e salva
 git add .
 git commit -m "Add package inits, .gitkeep and demo matches.csv"
 git push
+
+## Install
+```bash
+python -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
