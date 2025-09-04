@@ -22,11 +22,18 @@ source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 
-##Shortcut
-```bash
-date,season,matchweek,home_team,away_team,home_goals,away_goals,home_odds,draw_odds,away_odds
-2024-08-24,24-25,1,Inter,Genoa,2,0,1.55,4.10,7.20
-2024-08-25,24-25,1,Milan,Torino,1,1,1.90,3.50,4.20
-2024-08-31,24-25,2,Juventus,Monza,3,1,1.65,3.90,6.00
-2024-09-01,24-25,2,Napoli,Fiorentina,2,2,2.00,3.30,3.70
-2024-09-14,24-25,3,Roma,Lazio,0,1,2.30,3.20,3.10
+## Shortcut
+# crea segnaposto cartelle
+mkdir -p data/processed data/models data/raw
+type nul > data/processed/.gitkeep
+type nul > data/models/.gitkeep
+
+# file python init
+echo __version__ = "0.1.0" > src/__init__.py
+echo # scraping providers live here > src/scrape/__init__.py
+
+# csv demo
+notepad data/raw/matches.csv  # incolla il CSV sopra e salva
+git add .
+git commit -m "Add package inits, .gitkeep and demo matches.csv"
+git push
