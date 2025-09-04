@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/status-alpha-orange)
+
 # FootballAI
 Modello di machine learning per predire risultati 1X2 della Serie A. Include feature engineering (Elo, rolling stats, quote), training Logistic Regression, valutazione e predizioni su partite future tramite scraping o CSV.
 # football-ai — Serie A match predictor (1X2)
